@@ -1,0 +1,99 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/gastronomia.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.pt-1-resaber .video-title {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-1-resaber .video-title li {
+    font-weight: bold;
+}
+
+.pt-2-resaber {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.pt-2-resaber .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #C4C4C4;
+    border: 0;
+    
+}
+
+.pt-2-resaber #apresentacao {
+    float: right;
+}
+
+.pt-2-resaber .buttons a {
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    width: 110px;
+    height: 44px;
+}
+
+.pt-2-resaber .buttons .ler {
+    float: left;
+    background-color: #F98700;
+    color: #1E3963;
+}
+
+.pt-2-resaber .buttons .ouvir {
+    background-color: #317B6C;
+    color: #FCFDFF;
+    float: right;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .pt-1-resaber {
+        padding: 6rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 2.5em;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .pt-1-resaber {
+        padding: 1rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 1.5em;
+    }
+}	
+/* ============ small devices .end// ============ */
+
+.equal-height-card, .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    justify-content: space-between;
+}
+
+.card-body .buttons {
+    margin-top: auto;
+}
+
+.pt-2-resaber .card-title {
+    font-size: 1.25rem;
+}

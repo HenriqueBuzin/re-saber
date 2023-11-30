@@ -1,0 +1,84 @@
+.card {
+    background-color: #E8E7E5;
+    border: 0;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn:focus {
+    background-color: transparent;
+    border: 0;
+    color: #1E3963;
+    box-shadow: none !important;
+    font-weight: bold;
+}
+
+[id^="image"] {
+    width: 50px;
+}
+
+h1 {
+    color: #1E3963;
+    font-weight: bold;
+}
+
+.sub {
+    color: #525C60;
+    font-weight: bold;
+}
+
+p .btn {
+    font-weight: bold;
+}
+
+p img[id^="image"], p .btn {
+    display: inline;
+}
+
+.lista-com-risquinho {
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.lista-com-risquinho > li {
+    text-indent: -5px;
+}
+
+ul.lista-com-risquinho > li:before {
+    content: "-";
+    text-indent: -5px;
+    margin-right: 5px;
+}
+
+.lista-com-letras li, ul.lista-com-risquinho li {
+    margin-bottom: 0.5rem;
+}
+
+.pt-1-resaber {
+    margin-bottom: 60px;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .p-faq {
+        padding: 3rem;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .p-faq {
+        padding: 3rem 0.8rem 3rem 0.8rem;
+    }
+}	
+/* ============ small devices .end// ============ */
+
+#btn-voltar-ao-topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+}

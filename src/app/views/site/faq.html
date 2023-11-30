@@ -1,0 +1,1109 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/faq.css') }}">
+
+<script src="{{ url_for('static', filename='js/site/faq.js') }}"></script>
+
+<div class="pt-1-resaber container-fluid p-faq">
+
+    <div class="row">
+        
+        <div class="col-12">
+            
+            <h1 class="text-center">Respostas às Perguntas mais Frequentes</h1>
+
+            <p class="text-center sub">Tire suas dúvidas relacionadas ao Re-Saber</p>
+
+        </div>
+
+        <div class="col-md-8 col-sm-12 mx-auto">
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image1"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse1')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
+                        aria-controls="collapse1">
+                        Quem pode desenvolver o Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        <p>
+                            O Re-Saber é voltado às Instituições de Ensino Técnico, caso você seja um trabalhador da Educação
+                            Profissional, entre em contato com o Procurador Institucional ou Educacional da sua Instituição de
+                            Ensino.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image2"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse2')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                        aria-controls="collapse2">
+                        O que é Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        <p>
+                            Sistema Nacional de Reconhecimento e Certificação de Saberes e Competências Profissionais no âmbito do
+                            Ministério da Educação. É um sistema de certificação profissional gratuito, que visa a atender
+                            trabalhadores que detêm saberes e competências desenvolvidos ao longo da vida, fora do ambiente escolar
+                            formal, legalmente instituído no Brasil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image3"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse3')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                        aria-controls="collapse3">
+                        Qual legislação ampara o Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                        <p>
+                            Portaria MEC nº 24, de 19 de janeiro de 2021 - Dispõe sobre o Sistema Nacional de Reconhecimento e
+                            Certificação de Saberes e Competências Profissionais - Re-Saber, no âmbito do Ministério da
+                            Educação;
+                        </p>
+                        <p>
+                            Lei 9394/96 – (Lei de Diretrizes e Bases da Educação Nacional); Art. 41.
+                        </p>
+                        <p>
+                            Resolução CNE/CP nº 1, de 05 de Janeiro de 2021 (Diretrizes Curriculares Nacionais Gerais para a
+                            Educação Profissional e Tecnológica).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image4"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse4')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
+                        aria-controls="collapse4">
+                        Qual o objetivo do Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse4">
+                    <div class="card card-body">
+                        <p>
+                            Atender às demandas por certificação profissional do trabalhador, promover a inclusão socioprodutiva
+                            e
+                            incentivar a continuidade de estudos para a elevação da escolaridade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image5"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse5')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
+                        aria-controls="collapse5">
+                        Quais os benefícios de desenvolver o Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse5">
+                    <div class="card card-body">
+                        <p>
+                            Certificação profissional de trabalhadores; diminuição da informalidade; inclusão socioprodutiva;
+                            elevação da escolaridade; e aumento do número de matrículas na Educação Profissional e Tecnológica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image6"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse6')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
+                        aria-controls="collapse6">
+                        Quem pode desenvolver o processo de certificação profissional no âmbito do Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse6">
+                    <div class="card card-body">
+                        <p>
+                            O Re-Saber é organizado nacionalmente e possui estrutura descentralizada. Respeitadas as
+                            competências
+                            dos sistemas, é obrigatório para a esfera de ensino federal, oportunizado aos sistemas estadual e
+                            municipal; é facultada ao sistema de ensino militar a participação nos termos do art. 83 da Lei nº
+                            9.394/1996.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image7"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse7')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="false"
+                        aria-controls="collapse7">
+                        Quem pode participar do processo de certificação profissional?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse7">
+                    <div class="card card-body">
+                        <p>
+                            Trabalhadores maiores de 18 (dezoito) anos, com escolaridade mínima requerida para o respectivo
+                            processo
+                            de certificação, inseridos ou não no mundo do trabalho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image8"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse8')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse8" role="button" aria-expanded="false"
+                        aria-controls="collapse8">
+                        Existem pré-requisitos para o trabalhador participar do Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse8">
+                    <div class="card card-body">
+                        <p>
+                            Para os processos de certificação profissional de qualificação, exige-se apenas a idade mínima de 18
+                            anos completos. Para os processos de certificação profissional técnico ou tecnológico, exige-se o
+                            ensino
+                            médio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image9"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse9')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse9" role="button" aria-expanded="false"
+                        aria-controls="collapse9">
+                        Quais os benefícios que o trabalhador pode ter ao receber a certificação profissional?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse9">
+                    <div class="card card-body">
+                        <p>
+                            A certificação é baseada na avaliação prática das competências desenvolvidas pelo trabalhador ao
+                            longo
+                            da vida. O reconhecimento dessas competências permite a consolidação no mundo do trabalho, uma vez
+                            que
+                            muitos trabalhadores não possuem qualquer registro que ateste a profissão que desenvolvem.
+                        </p>
+                        <p>
+                            A certificação profissional contribui para melhorias no mundo do trabalho, dá credibilidade e
+                            reconhecimento às atividades desenvolvidas e potencializa melhorias remuneratórias. Além disso,
+                            oportuniza o reingresso para as instituições de ensino.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image10"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse10')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse10" role="button" aria-expanded="false"
+                        aria-controls="collapse10">
+                        Quais setores ou indústrias frequentemente exigem certificações?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse10">
+                    <div class="card card-body">
+                        <p>
+                            Diversos setores da indústria, dentre elas pode-se citar: alimentícia, química, têxtil, metal
+                            mecânica,
+                            siderúrgica, saúde entre outras que exigem qualificação profissional para as mais diversas
+                            atividades.
+                        </p>
+                        <p>
+                            No Catálogo Brasileiro de Ocupações (CBO) são registradas mais de 18 mil ocupações certificáveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        id="image11"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse11')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse11" role="button" aria-expanded="false"
+                        aria-controls="collapse11">
+                        Qual o custo ou valor pago para participar do processo de certificação?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse11">
+                    <div class="card card-body">
+                        <p>
+                            O processo de certificação profissional deve ser totalmente gratuito para o trabalhador, conforme a
+                            Portaria MEC nº 24, de 19 de janeiro de 2021.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image12"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse12')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse12" role="button" aria-expanded="false"
+                        aria-controls="collapse12">
+                        O que é necessário para desenvolver o Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse12">
+                    <div class="card card-body">
+                        <p>
+                            Adesão e credenciamento ao Re-saber, junto ao Ministério da Educação (MEC) / Secretaria de Educação
+                            Profissional e Tecnológica (Setec).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        id="image13"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse13')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse13" role="button" aria-expanded="false"
+                        aria-controls="collapse13">
+                        Quais documentos são necessários para adesão e credenciamento ao Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse13">
+                    <div class="card card-body">
+                        <p>
+                            Termo de Adesão ao Re-Saber e Regulamentação Interna. Com esses documentos, a instituição de ensino
+                            faz
+                            adesão e credenciamento ao Re-Saber, junto ao Ministério da Educação, por meio da aba Re-Saber, no
+                            Sistema Nacional de Informações da Educação Profissional e Tecnológica (SISTEC).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image14"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse14')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse14" role="button" aria-expanded="false"
+                        aria-controls="collapse14">
+                        O que é o termo de Adesão?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse14">
+                    <div class="card card-body">
+                        <p>
+                            Termo de Adesão é o documento assinado pelo gestor máximo, e publicizado, autorizando a instituição
+                            de
+                            ensino a participar do processo de certificação profissional no âmbito do Re-Saber.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image15"
+                        onclick="toggleBootstrapCollapse('collapse15')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse15" role="button" aria-expanded="false"
+                        aria-controls="collapse15">
+                        O que é a Regulamentação Interna?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse15">
+                    <div class="card card-body">
+                        <p>
+                            São as normativas internas, construídas pela instituição de ensino, que assegurem o desenvolvimento
+                            e
+                            tramitação do Re-Saber. Compreende todo o processo de certificação profissional que será
+                            desenvolvido na
+                            sua instituição. A Regulamentação Interna, também, pode ser entendida como uma Portaria, Documento
+                            Orientador, Instrução Normativa ou outro documento, de acordo com as características de cada
+                            instituição
+                            de ensino.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image16"
+                        onclick="toggleBootstrapCollapse('collapse16')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse16" role="button" aria-expanded="false"
+                        aria-controls="collapse16">
+                        Quais documentos são necessários inserir na aba Re-Saber do Sistema SISTEC para iniciar
+                        um processo de
+                        certificação profissional?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse16">
+                    <div class="card card-body">
+                        <ul class="lista-com-risquinho">
+                            <li>Termo de Adesão;</li>
+                            <li>Regulamentação Interna; e</li>
+                            <li>Projeto Pedagógico de Certificação Profissional (PPCP) ou Projeto Pedagógico de Curso e
+                                Certificação
+                                Profissional (PPCCP).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image17"
+                        onclick="toggleBootstrapCollapse('collapse17')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse17" role="button" aria-expanded="false"
+                        aria-controls="collapse17">
+                        Qual a orientação para cada processo novo?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse17">
+                    <div class="card card-body">
+                        <p>
+                            A cada novo processo, um PPCP deve ser inserido na aba Sistec, para abertura de um ciclo de
+                            matrícula.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image18"
+                        onclick="toggleBootstrapCollapse('collapse18')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse18" role="button" aria-expanded="false"
+                        aria-controls="collapse18">
+                        Quem fará a elegibilidade da adesão e credenciamento da Instituição de Ensino
+                        junto ao Ministério da
+                        Educação
+                        (MEC)?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse18">
+                    <div class="card card-body">
+                        <p>
+                            A adesão, Regulamentação Interna e elaboração dos Projeto Pedagógico de Certificação Profissional ou
+                            Projeto Pedagógico de curso e Certificação Profissional são desenvolvidos pela instituição
+                            ofertante.
+                            Após, são cadastrados na aba do Re-Saber no sistema SISTEC, para credenciamento, junto ao MEC/Setec.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image19"
+                        onclick="toggleBootstrapCollapse('collapse19')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse19" role="button" aria-expanded="false"
+                        aria-controls="collapse19">
+                        É possível a realização de parcerias entre as instituições públicas e
+                        privadas?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse19">
+                    <div class="card card-body">
+                        <p>
+                            Sim; há possibilidade de parcerias entre instituições de ensino públicas e privadas. É possível
+                            estabelecer parcerias com outras instituições de ensino, setores industriais, ou outros, visando a
+                            utilização de espaços, equipamentos, material, insumo para que o processo de certificação
+                            profissional
+                            possa ser desenvolvido. Entretanto, estas parcerias devem estar presentes no Projeto Pedagógico de
+                            Certificação Profissional...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        id="image20"
+                        alt="..."
+                        onclick="toggleBootstrapCollapse('collapse20')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse20" role="button" aria-expanded="false"
+                        aria-controls="collapse20">
+                        Quais  tipos de certificações profissionais existem no âmbito do
+                        Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse20">
+                    <div class="card card-body">
+                        <p>
+                            As certificações podem ocorrer por meio de cursos de Formação Inicial e Continuada (FIC), cursos
+                            Técnicos e Tecnológicos e Licenciatura para a Educação Profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image21"
+                        onclick="toggleBootstrapCollapse('collapse21')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button" aria-expanded="false"
+                        aria-controls="collapse21">
+                        Quais são as etapas necessárias para desenvolver o Re-Saber, segundo
+                        a Portaria MEC nº 24, de 19 de janeiro
+                        de
+                        2021?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse21">
+                    <div class="card card-body">
+                        <p>
+                            De acordo com a Portaria MEC nº 24, de 19 de janeiro de 2021, as principais etapas compreendem:
+                        </p>
+                        <p>
+                            I - inscrição;
+                        </p>
+                        <p>
+                            II - acolhimento;    
+                        </p>
+                        <p>
+                            III - matrícula;    
+                        </p>
+                        <p>
+                            IV - avaliação: processo de verificação e reconhecimento de saberes e competências profissionais;    
+                        </p>
+                        <p>
+                            V - encaminhamento; e    
+                        </p>
+                        <p>
+                            VI - emissão de documentos.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image22"
+                        onclick="toggleBootstrapCollapse('collapse22')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse22" role="button" aria-expanded="false"
+                        aria-controls="collapse22">
+                        O que é a Busca Ativa?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse22">
+                    <div class="card card-body">
+                        <p>
+                            É uma metodologia que busca verificar a expectativa e disponibilidade de trabalhadores em participar
+                            de
+                            processo de certificação profissional.
+                        </p>
+                        <p>
+                            Pode-se utilizar como estratégias: parcerias com órgãos públicos e organizações sociais, divulgação
+                            de
+                            cartazes, pôsteres, posts/vídeos em redes sociais, sites da administração pública, panfletagem,
+                            visitas,
+                            divulgação em carro de som, entre outros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image23"
+                        onclick="toggleBootstrapCollapse('collapse23')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse23" role="button" aria-expanded="false"
+                        aria-controls="collapse23">
+                        O que é o Acolhimento?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse23">
+                    <div class="card card-body">
+                        <p>
+                            O acolhimento é a receptividade do trabalhador na Instituição durante todo o processo de
+                            certificação
+                            profissional. Todavia, o acolhimento inicial é o momento para apresentar a instituição, o processo
+                            de
+                            certificação profissional que será desenvolvido, bem como, as respectivas etapas, cronograma, entre
+                            outros tópicos relevantes para o desenvolvimento do processo de certificação profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image24"
+                        onclick="toggleBootstrapCollapse('collapse24')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse24" role="button" aria-expanded="false"
+                        aria-controls="collapse24">
+                        O que é a Entrevista Coletiva?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse24">
+                    <div class="card card-body">
+                        <p>
+                            É uma conversa, realizada com o grupo de trabalhadores, que tem como objetivo a captação do
+                            cotidiano
+                            laboral, do perfil profissional, das atribuições, das condições de trabalho, bem como a integração e
+                            o
+                            fortalecimento do coletivo dos trabalhadores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image25"
+                        onclick="toggleBootstrapCollapse('collapse25')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse25" role="button" aria-expanded="false"
+                        aria-controls="collapse25">
+                        O que é a Entrevista Individual?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse25">
+                    <div class="card card-body">
+                        <p>
+                            A entrevista individual é diagnóstica. Ela contribuirá para detectar os candidatos que são realmente
+                            da
+                            área. A finalidade é conhecer suas experiências prévias, trajetória e conhecimentos técnicos
+                            pertinentes
+                            ao processo de certificação profissional em desenvolvimento. Esta etapa permite à equipe
+                            multidisciplinar observar se o trabalhador apresenta os critérios necessários para avançar às etapas
+                            posteriores. É sugerido que a entrevista individual não deva ser conduzida como uma arguição, nem
+                            como
+                            uma entrevista formal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image26"
+                        onclick="toggleBootstrapCollapse('collapse26')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse26" role="button" aria-expanded="false"
+                        aria-controls="collapse26">
+                        O que é a Avaliação Prática?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse26">
+                    <div class="card card-body">
+                        <p>
+                            É o momento em que o trabalhador apresenta ou desenvolve à equipe multidisciplinar sua atividade
+                            laboral
+                            para comprovar e atestar seus saberes e competências referentes ao
+                            processo de certificação profissional em desenvolvimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image27"
+                        onclick="toggleBootstrapCollapse('collapse27')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse27" role="button" aria-expanded="false"
+                        aria-controls="collapse27">
+                        Onde será realizada a avaliação prática?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse27">
+                    <div class="card card-body">
+                        <p>
+                            A avaliação prática poderá ser realizada na instituição de ensino certificadora, no local onde o
+                            trabalhador desenvolve suas atividades laborais ou, ainda, em instituições parceiras do processo de
+                            certificação profissional. Lembrando, que estas parcerias devem estar presentes no Projeto
+                            Pedagógico de
+                            Certificação Profissional (PPCP) e/ou Projeto Pedagógico de curso e Certificação Profissional
+                            (PPCCP).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image28"
+                        onclick="toggleBootstrapCollapse('collapse28')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse28" role="button" aria-expanded="false"
+                        aria-controls="collapse28">
+                        Como é feita a avaliação prática?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse28">
+                    <div class="card card-body">
+                        <p>
+                            Pode ser realizada em grupo ou individualmente. Embora, indica-se realizar em grupo por configurar
+                            uma
+                            comunidade de prática. De toda forma, a avaliação é individual.
+                        </p>
+                        <p>
+                            A avaliação é realizada por uma equipe multidisciplinar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image29"
+                        onclick="toggleBootstrapCollapse('collapse29')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse29" role="button" aria-expanded="false"
+                        aria-controls="collapse29">
+                        Como é composta a equipe
+                        multidisciplinar?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse29">
+                    <div class="card card-body">
+                        <p>
+                            Conforme Portaria Interministerial, deverá ser composta por um profissional de educação e dois
+                            professores da área específica correspondente à certificação profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image30"
+                        onclick="toggleBootstrapCollapse('collapse30')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse30" role="button" aria-expanded="false"
+                        aria-controls="collapse30">
+                        Quais os encaminhamentos finais
+                        do processo de certificação?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse30">
+                    <div class="card card-body">
+                        <p>
+                            Compreende a devolutiva individual do processo de certificação profissional, articulada com a
+                            emissão
+                            dos documentos:
+                        </p>
+                        <ol class="lista-com-letras">
+                            <li>
+                                Certificado - para os trabalhadores que demonstraram atender aos requisitos mínimos,
+                                correspondente a
+                                curso de qualificação profissional;
+                            </li>
+                            <li>
+                                Diploma - destinado aos trabalhadores que demonstraram atender aos requisitos mínimos de
+                                competência
+                                e escolaridade para o exercício das profissões de nível técnico, superior de tecnologia e
+                                licenciatura
+                                para a educação profissional;
+                            </li>
+                            <li>
+                                Histórico escolar - destinado a todos os trabalhadores que participaram integralmente do
+                                processo de
+                                certificação profissional, incluindo as notas, por unidade curricular, relativo ao curso de
+                                referência;
+                            </li>
+                            <li>
+                                Atestado - destinado aos trabalhadores que participaram integralmente do processo de
+                                certificação
+                                profissional, mas não atenderam aos requisitos mínimos de competência exigidos para serem
+                                certificados
+                                na ocupação profissional avaliada.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image31"
+                        onclick="toggleBootstrapCollapse('collapse31')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse31" role="button" aria-expanded="false"
+                        aria-controls="collapse31">
+                        Quais são os tipos de
+                        certificação que podem ser
+                        obtidos no âmbito do
+                        Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse31">
+                    <div class="card card-body">
+                        <p>
+                            Certificado para qualificação profissional; Diploma para cursos técnicos, tecnólogos e de docência
+                            para
+                            professores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        alt="..."
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" id="image32"
+                        onclick="toggleBootstrapCollapse('collapse32')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse32" role="button" aria-expanded="false"
+                        aria-controls="collapse32">
+                        O que é o Projeto Pedagógico de Certificação Profissional (PPCP) e o Projeto Pedagógico de Curso e
+                        Certificação Profissional (PPCCP)?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse32">
+                    <div class="card card-body">
+                        <p>
+                            É um documento estruturado que compreende os objetivos, conteúdos, metodologias, etapas do processo
+                            de
+                            certificação profissional e outros elementos necessários para a preparação e obtenção de uma
+                            certificação profissional.
+                        </p>
+                        <p>
+                            O Projeto Pedagógico de Certificação Profissional (PPCP) é construído para os processos de
+                            certificação
+                            profissional, tendo como referência cursos de qualificação profissional, cursos técnicos, tecnólogos
+                            e
+                            de docência. O Projeto Pedagógico de Curso e Certificação Profissional (PPCCP) é construído em
+                            conjunto:
+                            desenvolvimento do curso e certificação profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image33"
+                        onclick="toggleBootstrapCollapse('collapse33')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse33" role="button" aria-expanded="false"
+                        aria-controls="collapse33">
+                        Quais os cuidados que uma instituição de ensino profissional técnico ou superior deve ter para
+                        desenvolver o Re-Saber?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse33">
+                    <div class="card card-body">
+                        <p>
+                            É fundamental que a instituição esteja credenciada para desenvolver o Re-Saber, seguindo a Portaria
+                            Ministerial nº 24, de 19 de janeiro de 2021. Se faz necessário verificar sua estrutura física,
+                            equipe
+                            multidisciplinar e a possibilidade de estabelecimento de parcerias, caso não apresente a estrutura
+                            física necessária, a carga horária a ser incorporada à equipe multidisciplinar e outras demandas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image34"
+                        onclick="toggleBootstrapCollapse('collapse34')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse34" role="button" aria-expanded="false"
+                        aria-controls="collapse34">
+                        O que é Re-Saber Docente?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse34">
+                    <div class="card card-body">
+                        <p>
+                            Trata da regulamentação da oferta de programas destinados à Formação de Professores para a Educação
+                            Profissional e Tecnológica. O Re-Saber Docente visa reconhecer e certificar formalmente os saberes,
+                            conhecimentos profissionais desenvolvidos em processos formais
+                             e não formais de aprendizagem e na
+                            trajetória de vida e de trabalho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image35"
+                        onclick="toggleBootstrapCollapse('collapse35')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse35" role="button" aria-expanded="false"
+                        aria-controls="collapse35">
+                        Professor licenciado pode fazer Re-Saber Docente?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse35">
+                    <div class="card card-body">
+                        <p>
+                            Não! Pois o professor já possui uma licenciatura. Este processo de certificação é dirigido a
+                            profissionais que atuam na educação profissional e não são licenciados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..."
+                        id="image36"
+                        onclick="toggleBootstrapCollapse('collapse36')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse36" role="button" aria-expanded="false"
+                        aria-controls="collapse36">
+                        Para desenvolver o Re-Saber Docente, o que precisa fazer?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse36">
+                    <div class="card card-body">
+                        <p>
+                            Com a instituição já credenciada, junto ao MEC/Setec, compor a equipe multidisciplinar, possuir um
+                            curso
+                            de referência, construir um Projeto Pedagógico de Certificação Profissional e lançar um edital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image37"
+                        onclick="toggleBootstrapCollapse('collapse37')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse37" role="button" aria-expanded="false"
+                        aria-controls="collapse37">
+                        O que é curso de referência?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse37">
+                    <div class="card card-body">
+                        <p>
+                            É o curso que norteará o processo da certificação profissional, observar a Resolução CNE/CP 01/2021,
+                            o
+                            qual poderá ser:
+                        </p>
+                        <ul class="lista-com-risquinho">
+                            <li>Licenciatura em Educação Profissional;</li>
+                            <li>Complementação/formação pedagógica;</li>
+                            <li>Especialização em docência para Educação Profissional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image38"
+                        onclick="toggleBootstrapCollapse('collapse38')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse38" role="button" aria-expanded="false"
+                        aria-controls="collapse38">
+                        Quem pode participar do Edital?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse38">
+                    <div class="card card-body">
+                        <p>
+                            Todos os docentes tecnólogos ou bacharéis que tenham, no mínimo, 5 anos completos de experiência
+                            docente
+                            na Educação Profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image39"
+                        onclick="toggleBootstrapCollapse('collapse39')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse39" role="button" aria-expanded="false"
+                        aria-controls="collapse39">
+                        Quais são as etapas do processo de certificação do Re-Saber Docente?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse39">
+                    <div class="card card-body">
+                        <ul class="lista-com-risquinho">
+                            <li>Inscrição;</li>
+                            <li>Seleção;</li>
+                            <li>Matrícula;</li>
+                            <li>Acolhimento;</li>
+                            <li>Entrevista individual;</li>
+                            <li>Avaliação didática; e</li>
+                            <li>Memorial descritivo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="m-3">
+                <p>
+                    <img src="{{ url_for('static', filename='images/site/fechado.png') }}"
+                        data-open="{{ url_for('static', filename='images/site/aberto.png') }}"
+                        data-closed="{{ url_for('static', filename='images/site/fechado.png') }}" 
+                        alt="..." id="image40"
+                        onclick="toggleBootstrapCollapse('collapse40')" style="cursor: pointer;" />
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse40" role="button" aria-expanded="false"
+                        aria-controls="collapse40">
+                        Qual é o documento final do concluinte do Re-Saber Docente?
+                    </a>
+                </p>
+                <div class="collapse" id="collapse40">
+                    <div class="card card-body">
+                        <p>
+                            Diploma de Licenciatura em Docência para a Educação Profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            
+        </div> 
+
+    </div>
+
+    <a id="btn-voltar-ao-topo" href="#" onclick="scrollToTop();" title="Voltar ao topo">
+        <img src="{{ url_for('static', filename='images/site/cima.png') }}" alt="..." />
+    </a>
+
+</div>
+
+{% endblock %}

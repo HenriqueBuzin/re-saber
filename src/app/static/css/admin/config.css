@@ -1,0 +1,43 @@
+.pt-1-resaber {
+    background-color: #FFFFFF;
+    width: 400px;
+    margin: 30px auto 100px;
+    color: #317B6C;
+    border-radius: 10px;
+}
+
+.pt-1-resaber h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pt-1-resaber form label {
+    font-weight: bold;
+}
+
+.pt-1-resaber form input[type='email'], .pt-1-resaber form input[type='password'] {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #E3E1E1;
+    border: 1px solid #525C60;
+    padding: 10px;
+}
+
+.pt-1-resaber form input[type='submit'] {
+    border-radius: 5px;
+    background-color: #317B6C;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #7D7D7D;
+    padding: 10px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+}
+
+.pt-0-resaber  {
+    background-image: url('../../images/admin/fundo_cinza_1.png');
+    width: 100%;
+    background-size: cover;
+}

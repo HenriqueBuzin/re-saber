@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/admin/admin_page.css') }}">
+
+<div class="pt-0-resaber container-fluid p-5 mb-5">
+
+    <div class="pt-1-resaber container-fluid p-5 mb-5">
+
+        <h1>Bem-vindo(a) ao repositório de PPCPs</h1>
+
+        <p>
+            Clique no botão “Incluir PPCP” para disponibilizar publicamente, por meio da Plataforma Re-Sabe, Projetos Pedagógicos de Certificação Profissional (PPCPs) que já foram cadastrados no Sistec/MEC. Importante! Inclua um PPCP de cada vez.
+        </p>
+
+        <div class="buttons">
+            <a href="/admin/registrar" class="btn btn-azul">Incluir PPCP</a>
+            <a href="/admin/sair" class="btn btn-laranja">Sair</a>
+        </div>
+
+
+        {% if warning and warning_class %}
+        <div class="alert {{ warning_class }} mt-5" role="alert">
+            {{ warning }}
+        </div>
+        {% endif %}
+
+    </div>
+
+    <div class="pt-2-resaber container-fluid p-5 mb-5">
+        {% if existing_ppcps %}
+        <div class="existing_ppcps">
+            <ul class="ul-list">
+                {% for ppcp in existing_ppcps %}
+                <li>
+                    <p>Oferta: {{ ppcp.offering_institution_id }}</p>
+                    <p>Formação/ocupação: {{ ppcp.occupation_training_id }}</p>
+                    <p>Sistema Profissional: {{ ppcp.professional_system_id }}</p>
+                    <p>Nível de Qualificação: {{ ppcp.qualification_level_id }}</p>
+                    <p>Eixo Tecnológico: {{ ppcp.technological_axe_id }}</p>
+                    <p>Unidade Federativa: {{ ppcp.federative_unit_id }}</p>
+                    <p>Nome do PDF: {{ ppcp.pdf_filename }}</p>
+
+                    <a href="/admin/editar/{{ ppcp._id }}" class="btn btn-azul">Editar</a>
+
+                    <button type="button" class="btn btn-laranja" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Excluir
+                    </button>
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Título do Modal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Tem certeza de que deseja excluir este PPCP?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-azul"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                    <a href="/admin/excluir/{{ ppcp._id }}"
+                                        class="btn btn-laranja">Excluir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+
+        <p class="info">Nenhum PPCP cadastrado.</p>
+
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

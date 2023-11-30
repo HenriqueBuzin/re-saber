@@ -1,0 +1,36 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/gastronomia.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    height: 328px;
+}
+
+.pt-2-resaber {
+    color: #1E3963;
+    font-weight: bold;
+}
+
+/* ============ small devices ============ */
+@media (max-width: 449px) {
+    .pt-2-resaber > .row {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+}	
+/* ============ small devices .end// ============ */
+
+/* ============ desktop view ============ */
+@media (min-width: 450px) {
+    .pt-2-resaber > .row {
+        padding: 3rem;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+#pdfjs {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 500px;
+}

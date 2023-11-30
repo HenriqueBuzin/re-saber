@@ -1,0 +1,50 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo:7.0.2
+    container_name: mongo
+    command: mongod --auth
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
+      MONGO_INITDB_DATABASE: ${DB_DATABASE}
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - backend
+  python:
+    container_name: python
+    restart: unless-stopped
+    environment:
+      SECRET_KEY: "Re-Saber"
+      APP_DEBUG: "True"
+      MONGO_DATABASE: ${DB_DATABASE}
+      MONGO_USERNAME: ${DB_USERNAME}
+      MONGO_PASSWORD: ${DB_PASSWORD}
+      EMAIL_USERNAME: ${EMAIL_USERNAME}
+      EMAIL_PASSWORD: ${EMAIL_PASSWORD}
+      YOUTUBE_API_KEY: ${YOUTUBE_API_KEY}
+      MONGO_HOSTNAME: mongo
+    build:
+      context: ./src/
+      dockerfile: Dockerfile
+      target: 'develop-stage'
+    volumes:
+      - ./src:/src
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mongo
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  mongodata:
+    driver: local

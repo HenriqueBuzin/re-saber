@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/ppcps.css') }}">
+
+<script src="{{ url_for('static', filename='js/site/ppcps.js') }}"></script>
+
+<div class="pt-1-resaber container-fluid mb-3">
+    <div class="row p-md-5">
+        <div class="col-md-7 col-sm-12">
+            <ul class="video-title">
+                <li>Projeto Pedagógico de</li>
+                <li>Certificação Profissional (PPCP)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="pt-2-resaber container-fluid">
+    
+    <div class="row">
+
+        <div class="row justify-content-center p-sm-2">
+            <div class="col-md-6 col-sm-12 alert alert-danger" role="alert">
+                A base para pesquisa de PPCPs está sendo construída. No momento, NÃO há PPCPs cadastrados. Em breve, você poderá utilizar esta ferramenta para buscar e acessar PPCPs incluídos no Sistec/MEC.
+            </div>
+        </div>
+
+        <div class="row justify-content-center p-sm-2">
+            <div class="col-md-6 col-sm-12">
+                <h1>Quem está certificando</h1>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center p-sm-2">
+            <div class="col-md-6 col-sm-12">
+                <p class="description">
+                    Pesquise e tome como exemplo Projetos Pedagógicos de Certificação Profissional elaborados por
+                    instituições
+                    da
+                    Educação Profissional que estão oferecendo certificação para atender demandas locais
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <form id="searchForm">
+                    <div class="form-group">
+                        <input type="text" name="general_search_term" id="general_search_term" placeholder="digite aqui...">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </div>
+
+                    <div class="row m-0">
+                        <!-- Primeiro par de selects -->
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="offering_institution_id" id="offering_institution_id" class="select2">
+                                <option value="">Instituição de Oferta</option>
+                                {% for institution in offering_institution %}
+                                <option value="{{ institution._id }}">{{ institution.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="technological_axe_id" id="technological_axe_id" class="select2">
+                                <option value="">Eixo Tecnológico</option>
+                                {% for axe in technological_axes %}
+                                <option value="{{ axe._id }}">{{ axe.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+        
+                        <!-- Segundo par de selects -->
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="professional_system_id" id="professional_system_id" class="select2">
+                                <option value="">Sistema Profissional</option>
+                                {% for system in professional_systems %}
+                                <option value="{{ system._id }}">{{ system.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="qualification_level_id" id="qualification_level_id" class="select2">
+                                <option value="">Nível de Qualificação</option>
+                                {% for level in qualification_levels %}
+                                <option value="{{ level._id }}">{{ level.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+        
+                        <!-- Terceiro par -->
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="federative_unit_id" id="federative_unit_id" class="select2">
+                                <option value="">Unidade Federativa</option>
+                                {% for unit in federative_units %}
+                                <option value="{{ unit._id }}">{{ unit.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 form-group mb-3">
+                            <select name="occupation_training_id" id="occupation_training_id" class="select2">
+                                <option value="">Ocupação / Formação</option>
+                                {% for occupation in occupation_training %}
+                                <option value="{{ occupation._id }}">{{ occupation.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="results" class="d-flex flex-wrap justify-content-center"></div>
+        
+    </div>
+</div>
+
+{% endblock %}

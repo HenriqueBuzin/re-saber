@@ -1,0 +1,129 @@
+.pt-1-resaber {
+    width: 1200px;
+    margin: 0 auto;
+    color: #1E3963;
+    border-radius: 20px;
+}
+
+.pt-1-resaber h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #1E3963;
+}
+
+.pt-1-resaber h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #525C60;
+    font-size: 24px;
+}
+
+.pt-1-resaber form label {
+    font-weight: bold;
+    display: block;
+}
+
+.pt-1-resaber form input[type='text'], .pt-1-resaber form select {
+    height: 70px;
+}
+
+.pt-1-resaber form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.autocomplete-dropdown > div {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pt-1-resaber form input[type='text'], .pt-1-resaber form select {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #7D7D7D;
+    padding: 10px;
+}
+
+.pt-1-resaber form input[type='submit'], .pt-1-resaber form button {
+    border-radius: 5px;
+    background-color: #F98700;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 0;
+    padding: 15px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    margin-top: -7px;
+    margin-right: 16px;
+}
+
+.pt-0-resaber  {
+    background-image: url('../../images/admin/fundo_cinza_1.png');
+    width: 100%;
+    background-size: cover;
+}
+
+.select2-container {
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #7D7D7D;
+    background-color: #FFFFFF;
+}
+
+.select2-selection--single {    
+    border: 0 !important;
+}
+
+.select2-search__field {
+    border: 1px solid #7D7D7D;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px !important;
+    width: 36px !important;
+    top: 16px !important;
+    right: 12px !important;
+    background-image: url('../../images/admin/aberto_transparente.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.select2-selection__arrow b {
+    display: none;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#upload_button {
+    background-color: #317B6C;
+    color: white;
+    border: none;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border: 1px solid #7D7D7D;
+}
+
+#file_chosen {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #7D7D7D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pdf_upload {
+    display: none;
+}

@@ -1,0 +1,77 @@
+.pt-0-resaber  {
+    background-image: url('../../images/admin/fundo_cinza_1.png');
+    width: 100%;
+    background-size: cover;
+}
+
+.pt-1-resaber, .pt-2-resaber {
+    max-width: 1250px;
+}
+
+.pt-1-resaber {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.pt-1-resaber h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.pt-1-resaber p {
+    color: #525C60;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.pt-2-resaber {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.pt-1-resaber .buttons {
+    text-align: center;
+}
+
+.pt-1-resaber .btn:hover{
+    color: #FFFFFF;
+}
+
+.btn-azul {
+    border-radius: 5px;
+    background-color: #1E3963;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #7D7D7D;
+    padding: 10px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    border: 0;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.btn-laranja {
+    border-radius: 5px;
+    background-color: #F98700;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #7D7D7D;
+    padding: 10px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    border: 0;
+    margin-top: 40px;
+}
+
+.ul-list {
+    list-style-type: none;
+    color: #1E3963;
+    font-weight: bold;
+}
+
+.ul-list li {
+    margin-bottom: 30px;
+}

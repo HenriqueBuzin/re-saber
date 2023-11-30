@@ -1,0 +1,66 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/fundo_cinza_2.png');
+    width: 100%;
+    background-size: cover;
+}
+
+h1 {
+    color: #1E3963;
+    font-weight: bold;
+}
+
+p {
+    color: #525C60;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.imagem-infografico {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+    width: 80%;
+}
+
+div.imagem-container:nth-of-type(2n+1) > img.imagem-infografico {
+    float: left;
+}
+
+div.imagem-container:nth-of-type(2n) > img.imagem-infografico {
+    float: right;
+}
+
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imagem-overlay rect {
+    cursor: pointer;
+}
+
+#btn-voltar-ao-topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.download {
+    background-color: #FFFFFF;
+    color: #1E3963;
+    font-weight: bold;
+}
+
+.download img {
+    height: 36px;
+    width: 36px;
+}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/admin/index.css') }}">
+
+<div class="pt-0-resaber container-fluid p-5">
+
+    <div class="pt-1-resaber container-fluid p-5">
+        <h1>Login</h1>
+
+        {% if warning and warning_class %}
+        <div class="alert {{ warning_class }}" role="alert">
+            {{ warning }}
+        </div>
+        {% endif %}
+
+        <form action="/admin" method="POST">
+            
+            <div class="mb-3 mt-3">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3 mt-3">        
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Login">
+        </form>
+
+    </div>
+
+    <div class="pt-2-resaber container-fluid">
+        <span>Recuperar Senha</span>
+        <a href="/admin/recuperar_senha">Clique aqui</a>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/site/index.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/index.css') }}">
+
+<div class="pt-1-resaber container-fluid" id="video-container">
+    <div class="row">
+        <div class="col-mx-auto col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+            <ul class="video-title">
+                <li>Sistema Nacional de</li>
+                <li>Reconhecimento e</li>
+                <li>Certificação de Saberes e</li>
+                <li>Competências Profissionais</li>
+            </ul>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex justify-content-center">
+            <img src="{{ url_for('static', filename='images/site/play.png') }}" id="imagem" class="img-fluid" alt="..." />
+        </div>
+    </div>
+</div>
+
+<div class="pt-2-resaber container-fluid">
+    <div class="row">
+        <div class="col-mx-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <h1>Materiais de Apoio</h1>
+        </div>
+        <div class="col-mx-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
+            <h2>Vídeos, livros e projetos para orientar a implantação do Sistema Re-Saber</h2>
+        </div>
+        
+        <div class="row mb-3 d-flex justify-content-center m-0">
+            <div class="col-mx-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                <div class="card d-flex flex-column equal-height-card p-2">
+                    <img src="{{ url_for('static', filename='images/site/card1.png') }}" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Livros Re-Saber</p>
+                        <p class="card-text">
+                            PDFs e audiolivros desenvolvidos para o Curso Oficinas do Re-Saber, oferecido pelo IFSC e Setec/MEC.
+                        </p>
+                        <div class="buttons">
+                            <a href="/livros" class="btn btn-primary re-saber-card-button">Clique aqui</a>
+                            <div class="re-saber-card-icons">
+                                <img src="{{ url_for('static', filename='images/site/pdf.png') }}" alt="..." />
+                                <img src="{{ url_for('static', filename='images/site/volume.png') }}" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-mx-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                <div class="card d-flex flex-column equal-height-card p-2">
+                    <img src="{{ url_for('static', filename='images/site/card2.png') }}" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Projetos de Certificação</p>
+                        <p class="card-text">
+                            Exemplos de Projetos Pedagógicos de Certificação Profissional (PPCPs) elaborados por instituições  da Educação Profissional.
+                        </p>
+                        <div class="buttons">
+                            <a href="/ppcps" class="btn btn-primary re-saber-card-button">Clique aqui</a>
+                            <div class="re-saber-card-icons">
+                                <img src="{{ url_for('static', filename='images/site/pdf.png') }}" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-mx-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
+                <div class="card d-flex flex-column equal-height-card p-2">
+                    <img src="{{ url_for('static', filename='images/site/card3.png') }}" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">Experiências inspiradoras</p>
+                        <p class="card-text">
+                            Vídeos sobre processos de certificação realizados no Brasil. Como foi feito? Como mudou a vida dos trabalhadores?
+                        </p>
+                        <div class="buttons">
+                            <a href="/experiencias" class="btn btn-primary re-saber-card-button">Clique aqui</a>
+                            <div class="re-saber-card-icons">
+                                <img src="{{ url_for('static', filename='images/site/multimidea.png') }}" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="pt-3-resaber container-fluid d-flex align-items-center justify-content-center p-5">
+    <div class="row">
+        <div class="col-mx-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <ul class="video-title">
+                <li>Como implementar o</li>
+                <li>Sistema Re-Saber</li>
+            </ul>
+        </div>
+        <div class="col-mx-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+            <a href="/como_implementar" class="saibaButton">Saiba mais</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/laboratorio.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.pt-1-resaber h1, .pt-2-resaber h1 {
+    color: #1E3963;
+}
+
+.pt-1-resaber h1 {
+    font-weight: bold;
+}
+
+.pt-2-resaber p {    
+    color: #525C60;
+}
+
+.pt-2-resaber {
+    margin: 30px 0 95px 0;
+}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/site/experiences.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/experiences.css') }}">
+
+<div class="pt-1-resaber container-fluid">
+    <div class="row">
+        <div class="col-md-7 col-sm-12">
+            <h1>Experiências Inspiradoras</h1>
+        </div>
+    </div>
+</div>
+
+<div class="pt-2-resaber container-fluid mb-5">
+    <div class="row p-5">
+        <div class="col-12">
+            <ul class="video-title">
+                <li>Vídeos relatando processos de certificação profissional realizadas no Brasil. Como os</li>
+                <li>obstáculos foram supperados? Como impactou a vida dos trabalhadores certificados?</li>
+            </ul>
+        </div>
+        {% for item in items %}
+            <div class="col-md-4 col-sm-12 videos p-3">
+                <div 
+                    class="image-container" 
+                    style="background-image: url('{{ item.thumbnail_url }}');"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#videoModal"
+                    data-video-id="{{ item.video_id }}"
+                ></div>
+                <p>{{ item.title }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="videoIframe" width="100%" height="400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

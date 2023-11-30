@@ -1,0 +1,71 @@
+.pt-1-resaber {
+    background-color: #FFFFFF;
+    width: 400px;
+    margin: 30px auto 30px;
+    color: #1E3963;
+    border-radius: 10px;
+}
+
+.pt-1-resaber h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pt-1-resaber form label {
+    font-weight: bold;
+}
+
+.pt-1-resaber form input[type='email'], .pt-1-resaber form input[type='password'] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #E3E1E1;
+    border: 1px solid #525C60;
+    padding: 15px;
+}
+
+.pt-1-resaber form input[type='submit'] {
+    border-radius: 5px;
+    background-color: #1E3963;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid #7D7D7D;
+    padding: 10px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+}
+
+.pt-2-resaber {
+    background-color: #FFFFFF;
+    width: 400px;
+    margin: 30px auto 100px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pt-2-resaber span {
+    color: #1E3963;
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.pt-2-resaber a {
+    background-color: #F98700;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.pt-0-resaber  {
+    background-image: url('../../images/admin/fundo_cinza_1.png');
+    width: 100%;
+    background-size: cover;
+}

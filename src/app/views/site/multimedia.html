@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/multimedia.css') }}">
+
+<div class="pt-1-resaber container-fluid p-5"></div>
+
+<div class="pt-2-resaber container-fluid mb-5">
+    <div class="row justify-content-center">
+        <div class="{{ 'col-md-6' if recurso == 1 else 'col-md-12' }} mb-3">
+            <p>
+                {{ result[0] }}
+            </p>
+        </div>
+        {% if recurso == 1 %}<div class="w-100"></div>{% endif %}
+        <div class="{{ 'col-md-6' if recurso == 1 else 'col-md-12' }} col-sm-12 p-0">
+            {% if recurso == 1 %}
+                <iframe src="{{ url_for('static', filename='pdfjs/web/viewer.html') }}?file={{ result[1] }}" id="pdfjs"></iframe>
+            {% elif recurso == 2 %}
+                <iframe class="iframe" src="{{ result[1] }}" width="100%" height="auto" frameborder="0" allowtransparency="true" allow="encrypted-media" scrolling="no"></iframe>
+            {% else %}
+                <p>Erro ao encontrar o conteúdo desejado.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

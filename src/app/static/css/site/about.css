@@ -1,0 +1,55 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/pesca.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #1E3963;
+}
+
+.pt-1-resaber .video-title {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-1-resaber .video-title li {
+    font-weight: bold;
+}
+
+.pt-2-resaber {
+    color: #1E3963;
+    margin-bottom: 30px;
+}
+
+.pt-2-resaber #sub {
+    font-weight: bold;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .pt-2-resaber {
+        padding: 8rem;   
+    }
+    .pt-1-resaber {
+        padding: 6rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 2.5em;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .pt-2-resaber {
+        padding: 3rem;
+    }
+    .pt-1-resaber {
+        padding: 1rem;   
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 1.5em;
+    }
+}
+
+/* ============ small devices .end// ============ */

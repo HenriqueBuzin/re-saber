@@ -1,0 +1,152 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/laboratorio.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #1E3963;
+}
+
+.pt-1-resaber .video-title {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-1-resaber .video-title li {
+    font-weight: bold;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .pt-1-resaber {
+        padding: 6rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 2.5em;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .pt-1-resaber {
+        padding: 2rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 1.5em;
+    }
+}	
+/* ============ small devices .end// ============ */
+
+.pt-2-resaber {
+    margin-bottom: 72px;
+}
+
+.pt-2-resaber h1 {
+    color: #1E3963;
+}
+
+.pt-2-resaber .description {
+    color: #525C60;
+}
+
+#searchForm {
+    margin-bottom: 15px;
+}
+
+#searchForm > div:nth-child(1) {
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#searchForm > div:nth-child(1) input {
+    border: 0;
+    flex: 1;
+}
+
+#searchForm > div:nth-child(1) input:focus-visible {
+    outline: none;
+}
+
+#searchForm > div:nth-child(1) button {
+    background-color: #317B6C;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 10px;
+}
+
+.existing_ppcps {
+    color: #1E3963;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 15px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.existing_ppcps p {
+    color: #317B6C;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+
+}
+
+.existing_ppcps a {
+    font-weight: bold;
+    display: inline-block;
+    background-color: #317B6C;
+    border-radius: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.select2-container {
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #317B6C;
+    color: #FFFFFF;
+}
+
+.select2-selection--single {    
+    border: 0 !important;
+    color: #FFFFFF;
+}
+
+.select2-selection__rendered {
+    background-color: #317B6C !important;
+    color: #FFFFFF !important;
+}
+
+.select2-dropdown--below, .select2-dropdown--above {
+    background-color: #317B6C !important;
+}
+
+.select2-search__field {
+    background-color: #317B6C !important;
+    border: 1px solid #7D7D7D;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px !important;
+    width: 36px !important;
+    top: 12px !important;
+    right: 6px !important;
+    background-image: url('../../images/site/Aerrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.select2-selection__arrow b {
+    display: none;
+}

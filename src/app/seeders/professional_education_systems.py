@@ -1,0 +1,5 @@
+data = [
+    'Federal',
+    'Estadual',
+    'Municipal'
+]

@@ -1,0 +1,187 @@
+.pt-1-resaber {
+    background-image: url('../../images/site/eletrecista.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.pt-1-resaber .video-title {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-1-resaber .video-title li {
+    color: #E8E7E5;
+    font-weight: bold;
+    padding: 0;
+}
+
+.pt-1-resaber #imagem {
+    cursor: pointer;
+}
+
+.pt-2-resaber h1 {
+    color: #317B6C;
+    font-weight: bold;
+}
+
+.pt-2-resaber h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #525C60;
+}
+
+.pt-2-resaber .card {
+    border-radius: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pt-2-resaber .card .btn {
+    min-height: 38px;
+}
+
+.pt-2-resaber .card .buttons img {
+    height: 38px;
+}
+
+.pt-2-resaber .card .re-saber-card-icons {
+    float: right;
+}
+
+.pt-2-resaber .card .re-saber-card-icons img {
+    width: 38px;
+    height: 38px;
+}
+
+.equal-height-card, .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    justify-content: space-between;
+}
+
+.card-body .buttons {
+    margin-top: auto;
+}
+
+.pt-2-resaber .card .card-img-top {
+    border-radius: 20px;
+}
+
+.pt-2-resaber  {
+    background-image: url('../../images/site/fundo_cinza_1.png');
+    width: 100%;
+    background-size: cover;
+    margin-top: -10px;
+}
+
+.pt-2-resaber .card .re-saber-card-button {
+    border: 0;
+}
+
+.pt-2-resaber .btn-primary {
+    background-color: #317B6C !important;
+}
+
+.pt-2-resaber .card-title {
+    color: #317B6C !important;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.pt-3-resaber {
+    background-image: url('../../images/site/civil.png');
+    background-position: 25% 75%;
+    width: 100%;
+    height: 800px;
+}
+
+.pt-3-resaber .button {
+    background-color: transparent !important;
+    border: 3px solid #1E3963 !important;
+    color: #1E3963;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.saibaButton {
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    border: 3px solid #1E3963;
+    color: #1E3963;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.saibaButton:hover {
+    color: #1E3963;
+}
+
+.pt-3-resaber .video-title {
+    list-style: none;
+    padding: 0;
+}
+
+.pt-3-resaber .video-title li {
+    color: #1E3963;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .pt-2-resaber {
+        padding: 6rem;
+    }    
+    #video-container {
+        padding: 9rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 2.5em;
+    }
+    .pt-1-resaber #imagem {
+        height: 304px;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .pt-2-resaber {
+        padding: 2rem;
+    }
+    #video-container {
+        padding: 3rem;
+    }
+    .pt-1-resaber .video-title li {
+        font-size: 1.5em;
+    }
+    .pt-1-resaber #imagem {
+        width: 180px;
+    }
+}	
+/* ============ small devices .end// ============ */
+
+@media screen and (min-width: 768px) and (max-width: 878px) {
+    .card-body .buttons .re-saber-card-icons {
+        display: none;
+    }
+    .pt-2-resaber .card .re-saber-card-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 378px) {
+    .card-body .buttons .re-saber-card-icons {
+        display: none;
+    }
+    .pt-2-resaber .card .re-saber-card-button {
+        width: 100%;
+    }
+}

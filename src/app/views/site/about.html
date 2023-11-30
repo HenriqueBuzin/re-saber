@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/about.css') }}">
+
+<div class="pt-1-resaber container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <ul class="video-title">
+                <li>Sistema Nacional de</li>
+                <li>Reconhecimento e</li>
+                <li>Certificação de Saberes e</li>
+                <li>Competências Profissionais</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8KeJZkJHvjI?si=hwrmjUv1MubjNn3U"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="pt-2-resaber container-fluid">
+    <p>
+        O Sistema Nacional de Reconhecimento e Certificação de Saberes e Competências Profissionais - Re-Saber, no
+        âmbito do Ministério da Educação, é um sistema de certificação profissional gratuito, visando atender
+        trabalhadores que detêm saberes e competências desenvolvidos ao longo da vida, fora do ambiente escolar formal,
+        legalmente instituído no Brasil.
+    </p>
+    <p>
+        O Sistema Re-Saber tem como objetivo atender às demandas por certificação profissional do trabalhador, promover
+        a inclusão socioprodutiva e incentivar a continuidade de estudos. Foi instituído pela Portaria nº 24, de 19 de
+        janeiro de 2021, com o propósito de simplificar e desburocratizar a certificação profissional por instituições
+        públicas e privadas, garantindo confiabilidade e transparência nesses processos. É organizado nacionalmente e
+        possui estrutura descentralizada, respeitando as competências dos sistemas de ensino federal, estadual e
+        municipal, sendo facultada ao sistema de ensino militar a participação nos termos do art. 83 da Lei nº
+        9.394/1996.
+    </p>
+    <p id="sub">
+        A quem se destina
+    </p>
+    <p>
+        Podem ser certificados, trabalhadores maiores de 18 anos, com a escolaridade mínima requerida para o respectivo
+        processo de certificação (técnico, tecnólogo etc.), inseridos ou não no mundo do trabalho.
+    </p>
+    <p>
+        Podem oferecer a certificação, instituições de Educação Profissional e Tecnológica, mediante a elaboração de um
+        Projeto Pedagógico de Certificação Profissional (PPCP), submetido à aprovação através do Sistema Nacional de
+        Informações da Educação Profissional e Tecnológica – Sistec. A portaria prevê que a certificação seja ofertada
+        de forma gratuita para o trabalhador
+    </p>
+    <p>
+        Assim, traz benefícios para todas as partes envolvidas. Para o trabalhador, consolida o reconhecimento de
+        saberes e competências profissionais conquistadas no processo laboral, gera melhores condições de progredir na
+        carreira e de sair da informalidade. Para as instituições ofertantes, permite o aumento do número de matrículas
+        na Educação Profissional e Tecnológica.
+    </p>
+</div>
+
+{% endblock %}

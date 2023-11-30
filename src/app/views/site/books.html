@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site/books.css') }}">
+
+<div class="pt-1-resaber container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <ul class="video-title">
+                <li>Livros produzidos para o</li>
+                <li>Curso de Aperfeiçoamento</li>
+                <li>Oficinas do Re-Saberes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="pt-2-resaber container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc0.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">Apresentação</p>
+                    <p class="card-text">
+                        Introduz a coleção de livros Oficinas do Re-Saber, composta por cinco volumes, disponíveis
+                        em PDF e audiobook
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=2&item=0" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc1.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 1 - Epistemologia da EP</p>
+                    <p class="card-text">
+                        Aborda conceitos como: técnica, tecnologia, trabalho, além de normas da educação
+                        profissional no Brasil
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=1" class="btn btn-primary ler">Ler</a>
+                        <a href="/multimedia?recurso=2&item=1" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc2.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 2 - Certificação no Re-Saber</p>
+                    <p class="card-text">
+                        Estuda a Portaria do Re-Saber e contextualiza o sistema brasileiro de certificação de
+                        saberes e competências
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=2" class="btn btn-primary ler">Ler</a>
+                        <a href="/multimedia?recurso=2&item=2" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc3.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 3 - PPCP</p>
+                    <p class="card-text">
+                        Aborda o  Projeto Pedagógico para Certificação Profissional, a busca ativa, a escolha do
+                        curso de referência
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=3" class="btn btn-primary ler">Ler</a>
+                        <a href="/multimedia?recurso=2&item=3" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc4.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 4 - Arquivos de Referência</p>
+                    <p class="card-text">
+                        Exemplos de PPCPs e outros documentos a serem tomados como referência pelas instituições que pretendem aderir ao Sistema Re-Saber.
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=4" class="btn btn-primary ler">Ler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc5.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 5 - Adesão ao Re-Saber</p>
+                    <p class="card-text">
+                        Detalha a documentação necessária, o plano de trabalho e o passo a passo para a adesão da
+                        instituição ao Re-Saber
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=5" class="btn btn-primary ler">Ler</a>
+                        <a href="/multimedia?recurso=2&item=5" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-5 pb-0 pt-0">
+            <div class="card equal-height-card">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/site/uc6.png') }}"
+                    alt="Card image cap" />
+                <div class="card-body">
+                    <p class="card-title">UC 6 - Oferta do Re-Saber</p>
+                    <p class="card-text">
+                        Detalha a documentação necessária, o plano de trabalho e o passo a passo para a adesão da
+                        instituição ao Re-Saber
+                    </p>
+                    <div class="buttons">
+                        <a href="/multimedia?recurso=1&item=6" class="btn btn-primary ler">Ler</a>
+                        <a href="/multimedia?recurso=2&item=6" class="btn btn-primary ouvir">Ouvir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
