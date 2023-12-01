@@ -78,6 +78,10 @@ def edit_get(ppcp_id):
     offering_institution = offering_institution_instance.get_by_id(ppcp['offering_institution_id'])
     offering_institution = offering_institution['name']
 
+    training_occupation_instance = OcupationTraining()
+    training_occupation = training_occupation_instance.get_by_id(ppcp['occupation_training_id'])
+    training_occupation = training_occupation['name']
+
     professional_system_instance = ProfessionalEducationSystem()
     professional_systems = professional_system_instance.get_all_professional_education_systems()
 
@@ -93,6 +97,7 @@ def edit_get(ppcp_id):
     if ppcp:
         return render_template('admin/register.html', ppcp=ppcp,
                                                       offering_institution=offering_institution,
+                                                      training_occupation=training_occupation,
                                                       professional_systems=professional_systems,
                                                       qualification_levels=qualification_levels,
                                                       technological_axes=technological_axes,
@@ -103,7 +108,7 @@ def edit_get(ppcp_id):
 def edit_post(ppcp_id):
 
     offering_institution_name = request.form.get('offering_institution')
-    training_occupation = request.form.get('training_occupation')
+    training_occupation_name = request.form.get('training_occupation')
     professional_system_id = request.form.get('professional_system_id')
     qualification_level_id = request.form.get('qualification_level_id')
     technological_axe_id = request.form.get('technological_axe_id')
@@ -113,9 +118,12 @@ def edit_post(ppcp_id):
     offering_institution_instance = OfferingInstitution()
     offering_institution_id = offering_institution_instance.find_or_create(offering_institution_name)
 
+    training_occupation_instance = OcupationTraining()
+    training_occupation_id = training_occupation_instance.find_or_create(training_occupation_name)
+
     new_data = {
         "offering_institution_id": offering_institution_id,
-        "training_occupation": training_occupation,
+        "occupation_training_id": training_occupation_id,
         "professional_system_id": professional_system_id,
         "qualification_level_id": qualification_level_id,
         "technological_axe_id": technological_axe_id,
